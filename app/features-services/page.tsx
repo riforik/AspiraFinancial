@@ -52,7 +52,7 @@ export default function Page() {
                   <ReceiptPercentIcon className="h-8 w-8 text-black"/>
                   &nbsp; Automated Financial Planning
                 </h3>
-                <p className="text-gray-700 text-base">Set your goals, and let Aspira's algorithm guide you toward achieving them with automated, personalized financial planning.</p>
+                <p className="text-gray-700 text-base">Set your goals, and let Aspira&apos;s algorithm guide you toward achieving them with automated, personalized financial planning.</p>
             </div>
             {/* Accessibility */}
             <div className="border-2 border-gray-200 bg-white rounded-lg p-4 flex flex-col justify-center leading-normal shadow-md">

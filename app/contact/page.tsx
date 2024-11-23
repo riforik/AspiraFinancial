@@ -39,9 +39,9 @@ export default function Page() {
                             <p><strong>Step 1: Create Your Account: </strong></p>
                             <p className="mb-4">Visit our Sign-Up Page and provide some basic information to create your free Aspira account. All we need to get started is your name, email address, and a secure password of your choice.</p>
                             <p><strong>Step 2: Verify Your Identity: </strong></p>
-                            <p className="mb-4">To ensure the safety of your data and compliance with industry regulations, we'll ask you to verify your identity. This quick process is essential for maintaining a secure and trustworthy platform for all our users.</p>
+                            <p className="mb-4">To ensure the safety of your data and compliance with industry regulations, we&apos;ll ask you to verify your identity. This quick process is essential for maintaining a secure and trustworthy platform for all our users.</p>
                             <p><strong>Step 3: Select Your Plan: </strong></p>
-                            <p>Explore our Pricing Options and choose the plan that suits your financial goals. Whether you're just starting out or managing complex portfolios, we have a plan tailored to your needs.</p>
+                            <p>Explore our Pricing Options and choose the plan that suits your financial goals. Whether you&apos;re just starting out or managing complex portfolios, we have a plan tailored to your needs.</p>
                         </div>
                     </div>
                 </div>
@@ -53,14 +53,14 @@ export default function Page() {
                               <p>
                                 <strong>Step 1: Sign Up and Set Your Profile</strong>
                                 <ul className="mb-4">
-                                  <li className="list-disc">Begin by creating an account on our platform. Provide some basic details, and we'll guide you through setting up your profile.</li>
-                                  <li className="list-disc">Once you're signed up, customize your dashboard to focus on the financial goals and tools most relevant to you.</li>
+                                  <li className="list-disc">Begin by creating an account on our platform. Provide some basic details, and we&apos;ll guide you through setting up your profile.</li>
+                                  <li className="list-disc">Once you&apos;re signed up, customize your dashboard to focus on the financial goals and tools most relevant to you.</li>
                                 </ul>
                               </p>
                               <p>
                                 <strong>Step 2: Connect Your Accounts</strong>
                                 <ul className="mb-4">
-                                  <li className="list-disc">Link your financial accounts securely to Aspira. Whether it's bank accounts, investment portfolios, or payment services, our platform integrates seamlessly with major providers.</li>
+                                  <li className="list-disc">Link your financial accounts securely to Aspira. Whether it&apos;s bank accounts, investment portfolios, or payment services, our platform integrates seamlessly with major providers.</li>
                                   <li className="list-disc">Your data is encrypted and protected throughout the process, ensuring the utmost security.</li>
                                 </ul>
                               </p>
@@ -80,11 +80,11 @@ export default function Page() {
                     <div className="border-2 border-gray-200 bg-white rounded-lg p-8 flex flex-col justify-center leading-normal shadow-md">
                         <div className="text-gray-700 text-base">
                             <div className="text-gray-900 font-bold text-xl mb-2 text-center">General inquiries</div>
-                            <p className="text-gray-700 text-base mb-4">Have a question? We're here to help! Whether you're new to Aspira or an existing user looking for assistance, our team is ready to provide the answers and support you need.</p>
+                            <p className="text-gray-700 text-base mb-4">Have a question? We&apos;re here to help! Whether you&apos;re new to Aspira or an existing user looking for assistance, our team is ready to provide the answers and support you need.</p>
                             <p>
                                 <strong>Step 3: Explore Tools and Features</strong>
                                 <ul>
-                                  <li className="list-disc">Account Setup: Need help creating or managing your account? We've got you covered.</li>
+                                  <li className="list-disc">Account Setup: Need help creating or managing your account? We&apos;ve got you covered.</li>
                                   <li className="list-disc">Platform Features: Want to learn more about our tools and how to make the most of them? Reach out for a personalized overview.</li>
                                   <li className="list-disc">Plan Selection: Unsure which plan suits your needs? Let us guide you through your options.</li>
                                   <li className="list-disc">Billing and Payments: Have questions about payments, invoices, or account updates? Contact our billing team for assistance.</li>

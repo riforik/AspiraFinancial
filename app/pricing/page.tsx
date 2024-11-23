@@ -56,7 +56,7 @@ export default function Page() {
                 <p className="mt-6 text-lg leading-8 text-gray-600 mb-6 font-bold">
                     Choose the Plan That Fits Your Needs.
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">Flexible, transparent pricing with no hidden fees. Pick the plan that's right for you.</p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">Flexible, transparent pricing with no hidden fees. Pick the plan that&apos;s right for you.</p>
               </div>
             </div>
           

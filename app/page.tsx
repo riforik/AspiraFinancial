@@ -101,7 +101,7 @@ export default function Home() {
                 <ShieldCheckIcon className="h-12 w-12 text-black"/>
                 &nbsp; Security & Privacy: Your Data, Our Priority
               </h2>
-              <p className="max-w-4xl">At Aspira, we take your privacy and security seriously. As a financial tech startup, we understand the importance of safeguarding sensitive information. That's why we've implemented state-of-the-art security protocols to ensure your data is protected at every level.</p>
+              <p className="max-w-4xl">At Aspira, we take your privacy and security seriously. As a financial tech startup, we understand the importance of safeguarding sensitive information. That&apos;s why we&apos;ve implemented state-of-the-art security protocols to ensure your data is protected at every level.</p>
             </div>
           </div>
           {/* Cards */}
