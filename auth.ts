@@ -8,11 +8,11 @@ import pg from 'pg'
 const { Pool } = pg
 
 const pool = new Pool({
-  user: 'postgres',
+  user: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   host: process.env.POSTGRES_HOST,
   port: 5432,
-  database: 'postgres',
+  database: process.env.POSTGRES_DATABASE,
   max: 5,
   connectionTimeoutMillis: 20000,
   idleTimeoutMillis: 20000,
@@ -25,7 +25,7 @@ const pool = new Pool({
 
 async function getUser(email: string): Promise<User | undefined> {
   try {
-    console.log(pool);
+    // console.log(pool);
     const client = await pool.connect();
     const user = await client.query(`SELECT * FROM users WHERE email='${email}'`)
     console.log(user);
