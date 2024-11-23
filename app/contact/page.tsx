@@ -53,14 +53,14 @@ export default function Page() {
                               <p>
                                 <strong>Step 1: Sign Up and Set Your Profile</strong>
                                 <ul className="mb-4">
-                                  <li className="list-disc">Begin by creating an account on our platform. Provide some basic details, and we’ll guide you through setting up your profile.</li>
-                                  <li className="list-disc">Once you’re signed up, customize your dashboard to focus on the financial goals and tools most relevant to you.</li>
+                                  <li className="list-disc">Begin by creating an account on our platform. Provide some basic details, and we'll guide you through setting up your profile.</li>
+                                  <li className="list-disc">Once you're signed up, customize your dashboard to focus on the financial goals and tools most relevant to you.</li>
                                 </ul>
                               </p>
                               <p>
                                 <strong>Step 2: Connect Your Accounts</strong>
                                 <ul className="mb-4">
-                                  <li className="list-disc">Link your financial accounts securely to Aspira. Whether it’s bank accounts, investment portfolios, or payment services, our platform integrates seamlessly with major providers.</li>
+                                  <li className="list-disc">Link your financial accounts securely to Aspira. Whether it's bank accounts, investment portfolios, or payment services, our platform integrates seamlessly with major providers.</li>
                                   <li className="list-disc">Your data is encrypted and protected throughout the process, ensuring the utmost security.</li>
                                 </ul>
                               </p>
@@ -84,7 +84,7 @@ export default function Page() {
                             <p>
                                 <strong>Step 3: Explore Tools and Features</strong>
                                 <ul>
-                                  <li className="list-disc">Account Setup: Need help creating or managing your account? We’ve got you covered.</li>
+                                  <li className="list-disc">Account Setup: Need help creating or managing your account? We've got you covered.</li>
                                   <li className="list-disc">Platform Features: Want to learn more about our tools and how to make the most of them? Reach out for a personalized overview.</li>
                                   <li className="list-disc">Plan Selection: Unsure which plan suits your needs? Let us guide you through your options.</li>
                                   <li className="list-disc">Billing and Payments: Have questions about payments, invoices, or account updates? Contact our billing team for assistance.</li>
