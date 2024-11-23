@@ -3,8 +3,8 @@ import { inter } from '@/app/ui/fonts';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Equitary",
-  description: "Welcome to Equitary!",
+  title: "Aspira",
+  description: "Your all in one financial platform.",
 };
 
 export default function RootLayout({

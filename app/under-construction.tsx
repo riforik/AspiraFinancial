@@ -19,7 +19,7 @@ export default function UnderConstruction() {
       {/* Contact Page Landing - section */}
       <section className="max-w-[320px] text-center flex-nowrap justify-center items-center">
         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-          Website is under construction
+          Please enter your partner code to access the dashboard
         </h1>
         <p className="text-slate-500 mt-4">
           Look out for updates on our socials
@@ -43,7 +43,7 @@ export default function UnderConstruction() {
                       id="email"
                       type="email"
                       name="email"
-                      defaultValue="partnerAccess@equitary.ai"
+                      defaultValue="partnerAccess@aspira.com"
                       placeholder="Enter your email address"
                       required
                     />
@@ -88,7 +88,7 @@ export default function UnderConstruction() {
           {/* <Link
             key="login"
             href="/login"
-            className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Log in
           </Link> */}

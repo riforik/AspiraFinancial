@@ -6,7 +6,7 @@ import { inter } from '@/app/ui/fonts';
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import EquitaryLogo from '@/app/ui/equitary-logo';
+import AspiraLogo from '@/app/ui/aspira-logo';
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
@@ -30,34 +30,66 @@ export default function Page() {
             </div>
           </div>
           <div className="flex-nowrap justify-center px-16 pb-16">
-            <div className="grid grid-cols-3 gap-12 px-12 mt-32">
+            <div className="grid md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-12 px-12 mt-32">
                 {/* Founder tile 1 */}
-                <div className="col-span-1 text-center">
-                    <div className="border border-gray-400 lg:border lg:border-gray-400 bg-gray-300 rounded-lg p-4 flex flex-col justify-center leading-normal h-96 col-span-2">
-                        <div className="mb-8">
-                            <div className="text-gray-900 font-bold text-xl mb-2">How do I get access?</div>
-                            <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque non dolore. Inventore blanditiis eius accusamus odit sequi debitis nesciunt architecto nemo quisquam, voluptatem veniam harum laborum deserunt quia voluptatum?
-                            Ipsam minima iste ducimus accusantium minus maxime quae perferendis assumenda. Quis, animi, blanditiis neque ipsa, maxime alias nisi libero inventore corrupti nemo quam officia explicabo. Eaque dolor at voluptatibus numquam?</p>
+                <div className="col-span-1 text-left">
+                    <div className="border-2 border-gray-200 bg-white rounded-lg p-8 flex flex-col justify-center leading-normal shadow-md">
+                        <div className="text-gray-700 text-base">
+                            <div className="text-gray-900 font-bold text-xl mb-2 text-center">How do I get access?</div>
+                            <p><strong>Step 1: Create Your Account: </strong></p>
+                            <p className="mb-4">Visit our Sign-Up Page and provide some basic information to create your free Aspira account. All we need to get started is your name, email address, and a secure password of your choice.</p>
+                            <p><strong>Step 2: Verify Your Identity: </strong></p>
+                            <p className="mb-4">To ensure the safety of your data and compliance with industry regulations, we'll ask you to verify your identity. This quick process is essential for maintaining a secure and trustworthy platform for all our users.</p>
+                            <p><strong>Step 3: Select Your Plan: </strong></p>
+                            <p>Explore our Pricing Options and choose the plan that suits your financial goals. Whether you're just starting out or managing complex portfolios, we have a plan tailored to your needs.</p>
                         </div>
                     </div>
                 </div>
                 {/* Founder tile 1 */}
-                <div className="col-span-1 text-center">
-                    <div className="border border-gray-400 lg:border lg:border-gray-400 bg-gray-300 rounded-lg p-4 flex flex-col justify-center leading-normal h-96 col-span-2">
-                        <div className="mb-8">
-                            <div className="text-gray-900 font-bold text-xl mb-2">How does it work?</div>
-                            <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et eius qui molestias quia eligendi impedit explicabo expedita voluptatem, laboriosam ducimus tempora? Ad expedita aliquid distinctio qui molestias. Doloremque, rerum!
-                            Explicabo sunt reiciendis ipsam nemo. Eos, nobis quis ducimus et suscipit dolore fugiat sequi nulla odio dolorem repellat aperiam voluptas dicta praesentium sunt recusandae perferendis? Maiores fugit reiciendis molestias dolore.</p>
-                        </div>
+                <div className="col-span-1 text-left">
+                    <div className="border-2 border-gray-200 bg-white rounded-lg p-8 flex flex-col justify-center leading-normal shadow-md">
+                        <div className="text-gray-700 text-base"> 
+                            <div className="text-gray-900 font-bold text-xl mb-2 text-center">How does it work?</div>
+                              <p>
+                                <strong>Step 1: Sign Up and Set Your Profile</strong>
+                                <ul className="mb-4">
+                                  <li className="list-disc">Begin by creating an account on our platform. Provide some basic details, and we’ll guide you through setting up your profile.</li>
+                                  <li className="list-disc">Once you’re signed up, customize your dashboard to focus on the financial goals and tools most relevant to you.</li>
+                                </ul>
+                              </p>
+                              <p>
+                                <strong>Step 2: Connect Your Accounts</strong>
+                                <ul className="mb-4">
+                                  <li className="list-disc">Link your financial accounts securely to Aspira. Whether it’s bank accounts, investment portfolios, or payment services, our platform integrates seamlessly with major providers.</li>
+                                  <li className="list-disc">Your data is encrypted and protected throughout the process, ensuring the utmost security.</li>
+                                </ul>
+                              </p>
+                              <p>
+                                <strong>Step 3: Explore Tools and Features</strong>
+                                <ul>
+                                  <li className="list-disc">Investment Insights: Access real-time market analysis, automated portfolio tracking, and personalized investment suggestions tailored to your goals.</li>
+                                  <li className="list-disc">Financial Planning: Use our smart algorithms to create a financial roadmap. Set targets for saving, spending, or investing, and let Aspira help you stay on track.</li>
+                                  <li className="list-disc">Client Management (For Professionals): Simplify client interactions with intuitive tools for tracking performance, generating reports, and managing accounts all in one place.</li>
+                                </ul>
+                              </p>
+                            </div>
                     </div>
                 </div>
                 {/* Founder Tile 2 */}
-                <div className="col-span-1 text-center">
-                    <div className="border border-gray-400 lg:border lg:border-gray-400 bg-gray-300 rounded-lg p-8 flex flex-col justify-center leading-normal min-h-96 col-span-2">
-                        <div className="mb-8">
-                            <div className="text-gray-900 font-bold text-xl mb-2">General inquiries</div>
-                            <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio culpa a nisi mollitia fugiat sint reprehenderit dolor ipsam non, itaque ullam amet? Natus, quam porro sint suscipit aperiam ea.
-                            Obcaecati quos dignissimos natus quisquam deserunt ex mollitia adipisci rem doloribus deleniti, fugiat impedit sint delectus cupiditate quis consectetur quas commodi laboriosam ipsam maiores distinctio nisi necessitatibus consequuntur! Eius, corporis!</p>
+                <div className="col-span-1 text-left">
+                    <div className="border-2 border-gray-200 bg-white rounded-lg p-8 flex flex-col justify-center leading-normal shadow-md">
+                        <div className="text-gray-700 text-base">
+                            <div className="text-gray-900 font-bold text-xl mb-2 text-center">General inquiries</div>
+                            <p className="text-gray-700 text-base mb-4">Have a question? We're here to help! Whether you're new to Aspira or an existing user looking for assistance, our team is ready to provide the answers and support you need.</p>
+                            <p>
+                                <strong>Step 3: Explore Tools and Features</strong>
+                                <ul>
+                                  <li className="list-disc">Account Setup: Need help creating or managing your account? We’ve got you covered.</li>
+                                  <li className="list-disc">Platform Features: Want to learn more about our tools and how to make the most of them? Reach out for a personalized overview.</li>
+                                  <li className="list-disc">Plan Selection: Unsure which plan suits your needs? Let us guide you through your options.</li>
+                                  <li className="list-disc">Billing and Payments: Have questions about payments, invoices, or account updates? Contact our billing team for assistance.</li>
+                                </ul>
+                              </p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +183,7 @@ export default function Page() {
 
             <div className="sm:col-span-6 place-self-end">
             <button
-                className="rounded-md bg-equitaryPrimary px-12 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-aspiraPrimary px-12 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
                 Send
             </button>

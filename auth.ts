@@ -9,8 +9,8 @@ const { Pool } = pg
 
 const pool = new Pool({
   user: 'postgres',
-  password: process.env.NEXT_PUBLIC_POSTGRES_PASSWORD,
-  host: process.env.NEXT_PUBLIC_POSTGRES_HOST,
+  password: process.env.POSTGRES_PASSWORD,
+  host: process.env.POSTGRES_HOST,
   port: 5432,
   database: 'postgres',
   max: 5,

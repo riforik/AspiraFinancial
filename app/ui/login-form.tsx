@@ -10,6 +10,7 @@ import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
 import { useFormState, useFormStatus } from 'react-dom';
 import SocialLinks from './global-components/social-links';
+import Header from './global-components/header';
 
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
@@ -17,7 +18,7 @@ export default function LoginForm() {
   return (
     <section className="max-w-[320px] text-center flex-nowrap justify-center items-center">
         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-          Website is under construction
+          Please enter your partner code to access the dashboard
         </h1>
         <p className="text-slate-500 mt-4">
           Look out for updates on our socials
@@ -86,7 +87,7 @@ export default function LoginForm() {
           {/* <Link
             key="login"
             href="/login"
-            className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Log in
           </Link> */}

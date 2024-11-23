@@ -1,13 +1,13 @@
 import Image from 'next/image'
 
-export default function EquitaryIconLogo() {
+export default function AspiraIconLogo() {
   return (
     <div className="">
       <Image
-        src="/Equitary-icon-logo.svg"
+        src="/Aspira-icon-logo.svg"
         width={50}
         height={40}
-        alt="Equitary logo"
+        alt="Aspira logo"
       />
       {/* <p className="text-[44px] ">Acme</p> */}
     </div>

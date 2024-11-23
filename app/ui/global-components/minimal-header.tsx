@@ -4,7 +4,7 @@ import { inter } from '@/app/ui/fonts';
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import EquitaryLogo from '@/app/ui/equitary-logo';
+import AspiraLogo from '@/app/ui/aspira-logo';
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
@@ -22,8 +22,8 @@ export default function MinimalHeader() {
                 href='/'
                 className="-m-1.5 p-1.5"
                 >
-                <span className="sr-only">Equitary</span>
-                <EquitaryLogo/>
+                <span className="sr-only">Aspira Logo</span>
+                <AspiraLogo/>
                 </Link>
             </div>
         </nav>

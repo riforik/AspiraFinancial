@@ -4,7 +4,7 @@ import { inter } from '@/app/ui/fonts';
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import EquitaryLogo from '@/app/ui/equitary-logo';
+import AspiraLogo from '@/app/ui/aspira-logo';
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
@@ -12,7 +12,7 @@ import clsx from 'clsx';
 
 const navigation = [
     { name: 'About', href: '/about' },
-    { name: 'Community', href: '/community' },
+    { name: 'Features & Services', href: '/features-services' },
     { name: 'Contact', href: '/contact' },
     { name: 'Pricing', href: '/pricing' },
   ]
@@ -29,8 +29,8 @@ export default function Header() {
               href='/'
               className="-m-1.5 p-1.5"
               >
-                <span className="sr-only">Equitary</span>
-                <EquitaryLogo/>
+                <span className="sr-only">Aspira</span>
+                <AspiraLogo/>
               </Link>
             </div>
             <div className="flex lg:hidden">
@@ -49,7 +49,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={clsx(
-                  'text-sm leading-6 text-gray-900',
+                  'text-sm leading-6 text-gray-900 hover:font-bold',
                   {'font-bold': pathname === item.href})}
                   aria-current={pathname === item.href}
                 >
@@ -67,20 +67,20 @@ export default function Header() {
               <Link
                 key="login"
                 href="/login"
-                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimaryHover hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Log in
                 </Link>
               {/* <a
                 href="#"
-                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-equitaryPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Log in
               </a> */}
                <Link
                 key="register"
                 href="/register"
-                className="rounded-md bg-equitaryPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Sign Up - Get Access
                 </Link>
@@ -91,8 +91,8 @@ export default function Header() {
             <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Equitary</span>
-                  <EquitaryLogo/>
+                  <span className="sr-only">Aspira Logo</span>
+                  <AspiraLogo/>
                 </a>
                 <button
                   type="button"

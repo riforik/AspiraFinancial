@@ -14,11 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        equitaryPrimary: '#507FF4',
-        equitaryPrimaryHover: '#8AA9F7'
+        aspiraPrimary: '#007DFC',
+        aspiraPrimaryHover: '#3470BF'
       },
       colors: {
-        equitaryPrimary: '#507FF4'
+        aspiraPrimary: '#007DFC'
       },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',

@@ -53,7 +53,7 @@ export default function Form() {
                     <CloudArrowUpIcon  className="w-8 h-8 mb-4 text-gray-600" aria-hidden="true"/>
                   }
                   {incomeStatement && 
-                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-equitaryPrimary" aria-hidden="true"/>
+                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-aspiraPrimary" aria-hidden="true"/>
                   }
                     <p className="mb-2 text-sm text-gray-600">Click to upload <span className="font-semibold">Income Statement</span> or drag and drop</p>
                     {!incomeStatement &&
@@ -91,7 +91,7 @@ export default function Form() {
                     <CloudArrowUpIcon  className="w-8 h-8 mb-4 text-gray-600" aria-hidden="true"/>
                   }
                   {balanceSheet && 
-                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-equitaryPrimary" aria-hidden="true"/>
+                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-aspiraPrimary" aria-hidden="true"/>
                   }
                     <p className="mb-2 text-sm text-gray-600">Click to upload <span className="font-semibold">Balance Sheet</span> or drag and drop</p>
                     {!balanceSheet &&
@@ -129,7 +129,7 @@ export default function Form() {
                     <CloudArrowUpIcon  className="w-8 h-8 mb-4 text-gray-600" aria-hidden="true"/>
                   }
                   {cashFlowStatement && 
-                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-equitaryPrimary" aria-hidden="true"/>
+                    <CheckCircleIcon  className="w-8 h-8 mb-4 text-aspiraPrimary" aria-hidden="true"/>
                   }
                     <p className="mb-2 text-sm text-gray-600">Click to upload <span className="font-semibold">Cash Flow Statement</span> or drag and drop</p>
                     {!cashFlowStatement &&

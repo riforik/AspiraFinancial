@@ -1,4 +1,4 @@
-import EquitaryLogo from '@/app/ui/equitary-logo';
+import AspiraLogo from '@/app/ui/aspira-logo';
 import RegisterForm from '@/app/ui/register-form';
 import Link from 'next/link';
 import MinimalHeader from '../ui/global-components/minimal-header';
@@ -14,7 +14,7 @@ export default function LoginPage() {
             href="/"
             key="home">
                 <span className='sr-only'>Go to home page</span>
-                <EquitaryLogo />
+                <AspiraLogo />
             </Link>
           </div>
         </div> */}

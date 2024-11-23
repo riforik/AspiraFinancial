@@ -4,7 +4,7 @@ import { inter } from '@/app/ui/fonts';
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import EquitaryLogo from '@/app/ui/equitary-logo';
+import AspiraLogo from '@/app/ui/aspira-logo';
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import SocialLinks from "./social-links";
@@ -26,8 +26,8 @@ export default function Footer() {
         <div>
           <div className="">
             <a href="#" className="">
-              <span className="sr-only">Equitary</span>
-              <EquitaryLogo/>
+              <span className="sr-only">Aspira Logo</span>
+              <AspiraLogo/>
             </a>
           </div>
 
@@ -126,10 +126,10 @@ export default function Footer() {
           </div> */}
         {/* </div> */}
          {/* Card One */}
-        <div className="border border-gray-400 lg:border lg:border-gray-400 bg-gray-300 rounded-lg p-4 flex flex-col justify-center leading-normal w-1/2">
+        <div className="w-1/2 border-2 border-gray-200 bg-white rounded-lg p-4 flex flex-col justify-center leading-normal shadow-md">
             <div className="">
-              <div className="text-gray-900 font-bold text-l mb-2">Join the Equitary Community</div>
-              <p className="text-gray-700 text-base">Receive updates and news from us at Equitary</p>
+              <div className="text-gray-900 font-bold text-l mb-2">Join the Aspira Community</div>
+              <p className="text-gray-700 text-base">Receive updates and news from us at Aspira</p>
             </div>
             {/* <div className="flex items-center">
               <div className="text-sm">
@@ -156,9 +156,9 @@ export default function Footer() {
               <Link
                 key="register"
                 href="/register"
-                className="w-1/3 rounded-md bg-equitaryPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-equitaryPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="w-1/3 rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Sign Up - Get Access
+                  Stay Updated
                 </Link>
             </div>
             

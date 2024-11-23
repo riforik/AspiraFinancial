@@ -1,4 +1,4 @@
-import EquitaryLogo from "@/app/ui/equitary-logo";
+import AspiraLogo from "@/app/ui/aspira-logo";
 import { signOut } from "@/auth";
 import { randomUUID } from 'crypto';
 import { PlusIcon, PowerIcon, ChatBubbleLeftRightIcon, Cog8ToothIcon } from "@heroicons/react/24/outline";
@@ -15,7 +15,7 @@ export default function SideNav() {
             href="/dashboard"
             key="dashboard"
           >
-            <EquitaryLogo />
+            <AspiraLogo />
           </Link>
         </span>
         <span>
@@ -48,7 +48,7 @@ export default function SideNav() {
           href=""
           key="User">
             <UserCircleIcon className="pointer-events-none h-[24px] w-[24px]"/>
-            PartnerAccess@Equitary.ai
+            PartnerAccess@aspira.com
           </Link>
           <form className="border-t-2 w-full pt-2 mt-4 pb-2 border-gray-300"
             action={async () => {
