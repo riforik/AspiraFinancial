@@ -29,9 +29,9 @@ export default function LoginForm() {
           <form action={dispatch} className="space-y-3 w-full">
             <div className="flex-1 rounded-lg px-6 pb-4 pt-8">
               <div className="w-full">
-                <div className="hidden">
+                <div>
                   <label
-                    className="mb-3 mt-5 block text-xs font-medium text-gray-900"
+                    className="mb-3 mt-5 block text-gray-900 font-bold"
                     htmlFor="email"
                   >
                     Email
