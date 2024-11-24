@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from 'react'
-import { BoltIcon, ChartBarIcon, ChartBarSquareIcon, LightBulbIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
+import { BoltIcon, ChartBarSquareIcon, IdentificationIcon, LightBulbIcon, LockClosedIcon, ShieldCheckIcon, TrophyIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Header from "@/app/ui/global-components/header";
 import Footer from "@/app/ui/global-components/footer";
@@ -117,19 +117,19 @@ export default function Home() {
                   <Card 
                     name={'Advanced Security Protocols'} 
                     description={'Your data is protected with state-of-the-art encryption, multi-factor authentication, and continuous threat monitoring.'}
-                    icon={ChartBarSquareIcon}
+                    icon={LockClosedIcon}
                     >
                   </Card>
                   <Card 
                     name={'Transparent Practices'} 
                     description={'We believe in complete transparency when it comes to your data and our services. Aspira adheres to strict privacy regulations and never shares your information without your explicit consent.'}
-                    icon={ChartBarSquareIcon}
+                    icon={IdentificationIcon}
                     >
                   </Card>
                   <Card 
                     name={'Proven Expertise'} 
                     description={'Our team of financial and technology experts is dedicated to building tools that work seamlessly and reliably.'}
-                    icon={ChartBarSquareIcon}
+                    icon={TrophyIcon}
                     >
                   </Card>
                   </dl>

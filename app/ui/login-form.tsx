@@ -43,7 +43,7 @@ export default function LoginForm() {
                       id="email"
                       type="email"
                       name="email"
-                      defaultValue="partnerAccess@equitary.ai"
+                      defaultValue="partnerAccess@aspira.com"
                       placeholder="Enter your email address"
                       required
                     />

@@ -1,7 +1,7 @@
 import AspiraLogo from "@/app/ui/aspira-logo";
 import { signOut } from "@/auth";
 import { randomUUID } from 'crypto';
-import { PlusIcon, PowerIcon, ChatBubbleLeftRightIcon, Cog8ToothIcon } from "@heroicons/react/24/outline";
+import { PlusIcon, PowerIcon, ChatBubbleLeftRightIcon, Cog8ToothIcon, ReceiptRefundIcon } from "@heroicons/react/24/outline";
 import {UserCircleIcon} from "@heroicons/react/24/solid";
 import Link from "next/link";
 
@@ -27,7 +27,21 @@ export default function SideNav() {
           >
             <PlusIcon className="pointer-events-none h-[18px] w-[18px]" />
             New Job
-          </Link>
+        </Link>
+        <Link className='mt-8 rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex flex-row gap-2 items-center'
+            href={`/dashboard/transactions`}
+            key={id}
+          >
+            <ReceiptRefundIcon className="pointer-events-none h-[18px] w-[18px]" />
+            Transactions
+        </Link>
+        <Link className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex flex-row gap-2 items-center'
+            href={`/dashboard/clients`}
+            key={id}
+          >
+            <UserCircleIcon className="pointer-events-none h-[18px] w-[18px]" />
+            Clients
+        </Link>
       </div>
 
       <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">

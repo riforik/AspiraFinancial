@@ -1,127 +1,62 @@
-'use client';
 import { generateYAxis } from '@/app/lib/utils';
-import Image from 'next/image'
-import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-import LoadingBar from "../loading";
-import { useState } from 'react';
+import { CalendarIcon } from '@heroicons/react/24/outline';
+import { inter } from '@/app/ui/fonts';
+import { fetchRevenue } from '@/app/lib/data';
 
-// import { CalendarIcon } from '@heroicons/react/24/outline';
-// import "chart.js/auto";
-// import {Bar} from 'react-chartjs-2'
-// import { fetchRevenue } from '@/app/lib/data';
-
-// Fake Data
-// const revenue = [
-//     { month: 'Jan', revenue: 2000 },
-//     { month: 'Feb', revenue: 1800 },
-//     { month: 'Mar', revenue: 2200 },
-//     { month: 'Apr', revenue: 2500 },
-//     { month: 'May', revenue: 2300 },
-//     { month: 'Jun', revenue: 3200 },
-//     { month: 'Jul', revenue: 3500 },
-//     { month: 'Aug', revenue: 3700 },
-//     { month: 'Sep', revenue: 2500 },
-//     { month: 'Oct', revenue: 2800 },
-//     { month: 'Nov', revenue: 3000 },
-//     { month: 'Dec', revenue: 4800 },
-//   ];
-  
-// const chartData = {
-//     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-//     datasets: [
-//         {
-//             label: 'Revenue',
-//             barThickness: 10,
-//             borderRadius: 30,
-//             backgroundColor: 'rgba(47, 97, 68, 0.3)',
-//             data: [2000, 1800, 2200, 2500, 2300, 3200, 3500, 3700, 2500, 2800, 6000, 8200]
-//         }
-//     ]
-// }
-
-// const options = {
-//     plugins: {
-//         legend: {
-//             position: "top",
-//             align: "start",
-//             labels: {
-//                 boxWidth: 7,
-//                 usePointStyle: true,
-//                 pointStyle: "circle",
-//             },
-//             title: {
-//                 text: "Sales Report",
-//                 display: true,
-//                 color: "4000",
-//                 font: {
-//                     size: 18,
-//                 },
-//             },
-//         },
-//     },
-//     scales: {
-//         xAxis: {
-//             display: false,
-//         },
-//         yAxis: {
-//             max: 1,
-//         },
-//     },
-//     elements: {
-//         bar: {
-//             barPercentage: 0.3,
-//             categoryPercentage: 1,
-//         },
-//     },
-// };
-
+// This component is representational only.
+// For data visualization UI, check out:
+// https://www.tremor.so/
+// https://www.chartjs.org/
+// https://airbnb.io/visx/
 
 export default async function RevenueChart() {
+  const revenue = await fetchRevenue();
 
-//   const revenue = await fetchRevenue();
+  const chartHeight = 350;
+  const { yAxisLabels, topLabel } = generateYAxis(revenue);
 
-  // const chartHeight = 350;
-//   const { yAxisLabels, topLabel } = generateYAxis(revenue);
+  if (!revenue || revenue.length === 0) {
+    return <p className="mt-4 text-gray-400">No data available.</p>;
+  }
 
-
-//   if (!revenue || revenue.length === 0) {
-//     return <p className="mt-4 text-gray-400">No data available.</p>;
-//   }
-
-  const date = new Date().toISOString().split('T')[0];
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   return (
-    <div className="grid grid-cols-2 gap-12 px-12">
+    <div className="w-full md:col-span-4">
+      <h2 className={`${inter.className} mb-4 text-xl md:text-2xl text-gray-900`}>
+        Recent Gains
+      </h2>
+      <div className="rounded-xl bg-gray-50 p-4">
+        <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 md:gap-4">
+          {/* y-axis */}
+          <div
+            className="mb-6 hidden flex-col justify-between text-sm text-gray-900 sm:flex"
+            style={{ height: `${chartHeight}px` }}
+          >
+            {yAxisLabels.map((label) => (
+              <p key={label}>{label}</p>
+            ))}
+          </div>
 
-            {/* <iframe src="/static/files/Equitary-Due-Dilligence-Template.pdf" frameBorder="0" className='w-full h-screen col-span-2'></iframe> */}
-            {/* <div className="p-8 border border-gray-300 bg-white rounded-3xl flex flex-col justify-center leading-normal col-span-2">
-                <div>
-                  <div className="text-gray-900 flex flex-row justify-between p-8 pl-0">
-                    <span className='text-xl'>Report</span>
-                    <a className='flex flex-wrap gap-2 items-center justify-center rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                        key="reportDownload"
-                        href='/static/files/example.pdf'
-                        download='DDReport.pdf'
-                        target='_blank'
-                    >
-                        Download
-                        <ArrowDownTrayIcon className="pointer-events-none h-[18px] w-[18px]" />
-                    </a>
-                  </div>
-                  <div className='flex flex-nowrap items-center gap-8 p-8 bg-gray-100 rounded-3xl'>
-                    <Image
-                        src="/PDF-icon.svg"
-                        width={125}
-                        height={42}
-                        alt="Download your due dillegence report"
-                    />
-                    <p className="text-gray-700 text-base">
-                        <span className='font-medium'>Equitary Due Diligence Sample Report Name</span> <br />
-                        <span>PDF File | Generated by Equitary.ai {date} </span>
-                    </p>
-                  </div>
-                </div>
-              </div> */}
+          {revenue.map((month) => (
+            <div key={month.month} className="flex flex-col items-center gap-2">
+              {/* bars */}
+              <div
+                className="w-full rounded-md bg-aspiraPrimary"
+                style={{
+                  height: `${(chartHeight / topLabel) * month.revenue}px`,
+                }}
+              ></div>
+              {/* x-axis */}
+              <p className="-rotate-90 text-sm text-gray-700 sm:rotate-0">
+                {month.month}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center pb-2 pt-6">
+          <CalendarIcon className="h-5 w-5 text-gray-500" />
+          <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+        </div>
+      </div>
     </div>
   );
 }
