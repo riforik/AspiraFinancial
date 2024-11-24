@@ -5,6 +5,7 @@ import {
   AtSymbolIcon,
   KeyIcon,
   ExclamationCircleIcon,
+  UserIcon,
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
@@ -18,7 +19,7 @@ export default function LoginForm() {
   return (
     <section className="max-w-[320px] text-center flex-nowrap justify-center items-center">
         <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-          Please enter your partner code to access the dashboard
+          Log in to view your dashboard
         </h1>
         <p className="text-slate-500 mt-4">
           Look out for updates on our socials
@@ -46,6 +47,7 @@ export default function LoginForm() {
                       placeholder="Enter your email address"
                       required
                     />
+                    <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
                   </div>
                 </div>
                 <div className="mt-4">
@@ -53,7 +55,7 @@ export default function LoginForm() {
                     className="mb-3 mt-5 block text-gray-900 font-bold"
                     htmlFor="password"
                   >
-                    Access Code
+                    Password
                   </label>
                   <div className="relative">
                     <input

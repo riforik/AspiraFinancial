@@ -88,4 +88,12 @@ export type User = {
     status: 'pending' | 'paid';
   };
 
+  export type CardType = {
+      name: string;
+      description?: string;
+      icon?: string;
+      link?: string;
+  }
+
+
   export let IsUnderConstruction = true;

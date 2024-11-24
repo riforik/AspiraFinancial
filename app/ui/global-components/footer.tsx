@@ -22,7 +22,7 @@ export default function Footer() {
      
     <footer className="bg-white">
     <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-      <div className="flex justify-between">
+      <div className="flex justify-center md:justify-between sm:flex-wrap sm:flex-row items-center">
         <div>
           <div className="">
             <a href="#" className="">
@@ -126,8 +126,8 @@ export default function Footer() {
           </div> */}
         {/* </div> */}
          {/* Card One */}
-        <div className="w-1/2 border-2 border-gray-200 bg-white rounded-lg p-4 flex flex-col justify-center leading-normal shadow-md">
-            <div className="">
+        <div className="w-full md:w-1/2 lg:w-1/2 mt-8 md:mt-0 border-2 border-gray-200 bg-white rounded-lg p-4 flex flex-col justify-center leading-normal shadow-md">
+            <div>
               <div className="text-gray-900 font-bold text-l mb-2">Join the Aspira Community</div>
               <p className="text-gray-700 text-base">Receive updates and news from us at Aspira</p>
             </div>
