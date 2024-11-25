@@ -1,13 +1,16 @@
 import AspiraLogo from "@/app/ui/aspira-logo";
 import { signOut } from "@/auth";
 import { randomUUID } from 'crypto';
-import { PlusIcon, PowerIcon, ChatBubbleLeftRightIcon, Cog8ToothIcon, ReceiptRefundIcon } from "@heroicons/react/24/outline";
+import { PlusIcon, PowerIcon, ChatBubbleLeftRightIcon, Cog8ToothIcon, ReceiptRefundIcon, ArrowLeftCircleIcon } from "@heroicons/react/24/outline";
 import {UserCircleIcon} from "@heroicons/react/24/solid";
 import Link from "next/link";
 import NavLinks from '@/app/ui/dashboard/nav-links';
+import ProfileModal from "@/app/ui/dashboard/profile-modal";
+
 
 export default function SideNav() {
   let id = randomUUID();
+  
   return (
     <div className="flex h-screen flex-col justify-between border-e bg-white w-2/12 fixed left-0 top-0 min-w-64">
       <div className="px-8 py-6">
@@ -28,7 +31,6 @@ export default function SideNav() {
         </Link>
         <NavLinks />
       </div>
-
       <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
         <div className="flex items-center gap-2 flex-wrap bg-white p-4 hover:bg-gray-50">
           <Link className="flex flex-wrap gap-2 items-center justify-start w-full text-gray-500 hover:text-gray-700"
@@ -43,12 +45,8 @@ export default function SideNav() {
             <Cog8ToothIcon className="pointer-events-none h-[24px] w-[24px]"/>
             Settings
           </Link>
-          <Link className="mt-2 flex flex-wrap gap-2 items-center justify-start w-full text-gray-500 hover:text-gray-700"
-          href=""
-          key="User">
-            <UserCircleIcon className="pointer-events-none h-[24px] w-[24px]"/>
-            PartnerAccess
-          </Link>
+          <ProfileModal></ProfileModal>
+          
           <form className="border-t-2 w-full pt-2 mt-4 pb-2 border-gray-300"
             action={async () => {
               "use server";
@@ -59,9 +57,9 @@ export default function SideNav() {
 
             {/* <PowerIcon className="pointer-events-none h-[32px] w-[32px] text-gray-300"/> */}
 
-              <PowerIcon className="pointer-events-none h-[24px] w-[24px]"/>
+              <ArrowLeftCircleIcon className="pointer-events-none h-[24px] w-[24px]"/>
               
-              <button>Sign out</button>
+              <button>Exit Dashboard</button>
             </span>
           </form>
         </div>

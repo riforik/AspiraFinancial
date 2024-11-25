@@ -1,4 +1,5 @@
 import SideNav from '../ui/dashboard/side-nav';
+import ProfileModal from "@/app/ui/dashboard/profile-modal";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
       return (
