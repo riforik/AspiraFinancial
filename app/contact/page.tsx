@@ -126,7 +126,7 @@ export default function Page() {
                   Get in Touch
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color ">
-                  Have a question? We're here to help! Whether you're new to Aspira or an existing user looking for assistance, our team is ready to provide the answers and support you need.
+                  Have a question? We&apos;re here to help! Whether you&apos;re new to Aspira or an existing user looking for assistance, our team is ready to provide the answers and support you need.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="w-full">
