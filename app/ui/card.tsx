@@ -48,4 +48,24 @@ export function CardTile(features: CardType) {
           <dd className="text-base text-gray-700">{features.description}</dd>
       </div>
     );
-  }
+}
+
+
+export function ServiceCard(features: CardType) {
+    return (
+        <div className="w-full">
+          <div className="rounded-[20px] bg-white p-10 shadow-2 shadow-lg md:px-7 xl:px-10 h-full">
+            {features.icon
+                ? 
+                <div className="mb-8 flex size-14 items-center justify-center rounded-2xl bg-aspiraPrimary">   
+                <features.icon aria-hidden="true" className="size-8 text-white" ></features.icon>
+                </div>
+            : ''}
+            <h4 className="mb-[14px] text-2xl font-semibold text-black">
+              {features.name}
+            </h4>
+            <p className="text-gray-700">{features.description}</p>
+          </div>
+        </div>
+    );
+  };

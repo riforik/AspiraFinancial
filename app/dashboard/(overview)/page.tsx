@@ -14,7 +14,7 @@ export default function Dashboard() {
         <div className="relative mx-auto flex w-full max-w-[300px] flex-col space-y-2.5 p-4 text-black text-center overflow-scroll">
           <h1 className='text-4xl font-bold'>Hello!</h1>
           <p className='text-gray-500'>Welcome to your dashboard</p>
-          <Link className='flex flex-wrap gap-2 items-center justify-center rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+          <Link className='flex flex-wrap gap-2 items-center justify-center rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
             href={`/dashboard/jobs/${id}`}
             key={id}
           >

@@ -49,7 +49,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={clsx(
-                  'text-sm leading-6 text-gray-900 hover:font-bold',
+                  'text-sm leading-6 text-gray-900 hover:text-aspiraPrimary',
                   {'font-bold': pathname === item.href})}
                   aria-current={pathname === item.href}
                 >
@@ -67,7 +67,7 @@ export default function Header() {
               <Link
                 key="login"
                 href="/login"
-                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimaryHover hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-aspiraPrimary hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Log in
                 </Link>
@@ -80,7 +80,7 @@ export default function Header() {
                <Link
                 key="register"
                 href="/register"
-                className="rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-aspiraPrimary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Sign Up - Get Access
                 </Link>

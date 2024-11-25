@@ -116,8 +116,8 @@ export default function Page() {
                     aria-describedby={tier.id}
                     className={classNames(
                         tier.featured
-                        ? 'bg-aspiraPrimary text-white shadow-sm hover:bg-aspiraPrimaryHover focus-visible:outline-blue-700' 
-                        : 'text-aspiraPrimary ring-2 ring-inset ring-aspiraPrimary hover:ring-aspiraPrimaryHover focus-visible:outline-blue-700',
+                        ? 'bg-aspiraPrimary text-white shadow-sm hover:bg-opacity-90 focus-visible:outline-blue-700' 
+                        : 'text-aspiraPrimary ring-2 ring-inset ring-aspiraPrimary hover:ring-opacity-90 focus-visible:outline-blue-700',
                         'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
                     )}
                     >

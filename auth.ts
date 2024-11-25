@@ -28,7 +28,6 @@ async function getUser(email: string): Promise<User | undefined> {
     // console.log(pool);
     const client = await pool.connect();
     const user = await client.query(`SELECT * FROM users WHERE email='${email}'`)
-    console.log(user);
     client.release(true);
     return user.rows[0];
   } catch (error) {
@@ -53,8 +52,6 @@ export const { auth, signIn, signOut } = NextAuth({
           if (!user) return null;
 
           const passwordsMatch = await bcrypt.compare(password, user.password);
-          console.log(`password match: ${passwordsMatch} ${user}`);
-          
           if (passwordsMatch) return user;
         }
 
