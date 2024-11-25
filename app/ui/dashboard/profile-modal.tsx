@@ -44,7 +44,7 @@ export default function ProfileModal() {
                   </div>
                   <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
                     <DialogTitle as="h3" className="text-2xl font-semibold text-gray-900">
-                      Partner Access's Profile
+                      Partner Access&apos;s Profile
                     </DialogTitle>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
