@@ -33,7 +33,7 @@ export default function SideNav() {
       </div>
       <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
         <div className="flex items-center gap-2 flex-wrap bg-white p-4 hover:bg-gray-50">
-          <Link className="flex flex-wrap gap-2 items-center justify-start w-full text-gray-500 hover:text-gray-700"
+          {/* <Link className="flex flex-wrap gap-2 items-center justify-start w-full text-gray-500 hover:text-gray-700"
           href="/contact"
           key="Contact">
             <ChatBubbleLeftRightIcon className="pointer-events-none h-[24px] w-[24px]"/>
@@ -44,7 +44,7 @@ export default function SideNav() {
           key="Settings">
             <Cog8ToothIcon className="pointer-events-none h-[24px] w-[24px]"/>
             Settings
-          </Link>
+          </Link> */}
           <ProfileModal></ProfileModal>
           
           <form className="border-t-2 w-full pt-2 mt-4 pb-2 border-gray-300"
